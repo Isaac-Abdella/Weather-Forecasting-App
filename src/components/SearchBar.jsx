@@ -20,7 +20,7 @@ const SearchBar = ({ onLocationSelect }) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=5&appid=0388a7c4834fea76d68c801807a575ce`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${searchTerm}&limit=5&appid=0388a7c4834fea76d68c801807a575ce`
       );
       if (!response.ok) {
         throw new Error("Network response was not ok");
